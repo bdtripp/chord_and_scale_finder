@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chord and Scale Finder</title>
+        <script src="View.js"></script>
+        <script src="Results.js"></script>
+        <script src="MusicalElement.js"></script>
+        <script src="Chord.js"></script>
+        <script src="MajorChord.js"></script>
+        <script src="MinorChord.js"></script>
+        <script src="DiminishedChord.js"></script>
+        <script src="AugmentedChord.js"></script>
+        <script src="Scale.js"></script>
+        <script src="MajorScale.js"></script>
+        <script src="MinorScale.js"></script>
+        <script src="notes.js"></script>
+        <script src="MusicalElement.MusicalElementType.js"></script>
+        <script src="elements.js"></script>
+        <script>
+            var view = new View();
+            
+            view.createResults(elements);
+        </script>
+        <style>
+            h1 {
+                text-align: center;
+                border-bottom: 1px solid;
+                padding-bottom: 10px;
+            }
+            
+            p {
+                border-bottom: 1px solid black;
+                padding: 5px;
+            }
+            
+            #content {
+                border: 1px solid black;
+                width: 40%;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body onload="view.show();">
+        <div id="content">
+            <h1>Chord and Scale Finder</h1>
+        </div>
+    </body>
+</html>

@@ -8,9 +8,9 @@
 !!!!!!!!RUN IT FROM REPLIT badge goes here !!!!!!!
 ### Output:  
 **Chords** are listed first.
-There will be a line for the major chord, followed by a line for the minor chord.  Each line will contain the three musical notes that makeup the chord. The major and minor chords will repeat for each musical note (C, C#/Db, D, D#/Eb, E, F, F#/Gb, G, G#/Ab, A, A#/Ab, B). 
+There will be a line for the major chord, followed by a line for the minor chord.  Each line will contain the three musical notes that makeup the chord. The major and minor chords will repeat for each musical note (C, C#/Db, D, D#/Eb, E, F, F#/Gb, G, G#/Ab, A, A#/Ab, B).  
 <br/>
- Example:
+Example:
 -	C Major Chords:  C, E, G 
 -	C Minor Chords:  C, D#/Eb, G 
 repeat for next note C#
@@ -18,6 +18,7 @@ repeat for next note D
 etc.
 
 **Scales** will be listed next with the same format as the Chords.  
+<br/>
 Example:
 -	C Major Scale:  C, D, E, F, G, A, B 
 -	C Minor Scale:  C, D, D#/Eb, F, G, G#/Ab, A#/Bb

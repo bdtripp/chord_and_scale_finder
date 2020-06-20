@@ -8,8 +8,8 @@
 !!!!!!!!RUN IT FROM REPLIT badge goes here !!!!!!!  
 <br/>
 
-### Output:
 <br/>
+### Output:
 **Chords** are listed first.
 There will be a line for the major chord, followed by a line for the minor chord.  Each line will contain the three musical notes that makeup the chord. The major and minor chords will repeat for each musical note (C, C#/Db, D, D#/Eb, E, F, F#/Gb, G, G#/Ab, A, A#/Ab, B). 
 <br/>

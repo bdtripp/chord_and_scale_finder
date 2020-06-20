@@ -17,10 +17,8 @@ repeat for next note C#
 repeat for next note D
 etc.
 
-**Scales** will be listed next with the same format as the Chords.
-
-<br/>
- Example:
+**Scales** will be listed next with the same format as the Chords.  
+Example:
 -	C Major Scale:  C, D, E, F, G, A, B 
 -	C Minor Scale:  C, D, D#/Eb, F, G, G#/Ab, A#/Bb
 repeat for next note C#

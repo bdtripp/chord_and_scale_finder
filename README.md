@@ -32,9 +32,9 @@ Example:
 - C# Major Chords:  C#/Db, F, G#/Ab  
 - C# Minor Chords:  C#/Db, E, G#/Ab  
 - D  Major Chords:  D, F#/Gb, A  
-- D  Minor Chords:  D, F, A  
-etc.  
-<br/>  
+- D  Minor Chords:  D, F, A
+- etc./
+
 **Scales** will be listed next with the same format as the Chords.  
 <br/>  
 -	Each line will contain the seven musical notes that makeup the scale.  

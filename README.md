@@ -6,7 +6,6 @@ The musical chord and scale finder is capable of finding the musical notes that 
 - Minor Chord and Scale  
 - Diminished Chord and Scale 
 - Augmented Chord and Scale  
-<br/> 
 
 The first inversion and second inversion can also be listed for each of the above chords.  
 

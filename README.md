@@ -22,9 +22,8 @@ Developed using Object Oriented JavaScript using constructors, encapsulation, in
 <br/>  
 -	There will be one line for each type of chord (major, minor, diminished, augmented and the associated inversions).  
 -	Each line will contain the three musical notes that makeup the chord.  
-
 -	For the purpose of this run, C will be the only note that displays all the chords, and the inversion types for the major cord.  All other notes will only display major and minor chords  
-<br/>  
+
 The major and minor chords will be listed for each musical note (C, C#/Db, D, D#/Eb, E, F, F#/Gb, G, G#/Ab, A, A#/Ab, B).  
 <br/>  
 Example:  

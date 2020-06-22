@@ -17,8 +17,8 @@ Developed using Object Oriented JavaScript using constructors, encapsulation, in
 <br/>
 ### Output:  
 
-<br/>  
-**Chords** are listed first.  
+<br/>
+**Chords** are listed first.
 <br/>  
 -	There will be one line for each type of chord (major, minor, diminished, augmented and the associated inversions).  
 -	Each line will contain the three musical notes that makeup the chord.  

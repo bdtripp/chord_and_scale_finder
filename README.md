@@ -8,9 +8,9 @@ The musical chord and scale finder is capable of finding the musical notes that 
 - Augmented Chord and Scale  
 <br/> 
 
- The first inversion and second inversion can also be listed for each of the above chords. 
- <br/>
- Developed using Object Oriented JavaScript using constructors, encapsulation, inheritance and polymorphism. 
+The first inversion and second inversion can also be listed for each of the above chords. 
+<br/>
+Developed using Object Oriented JavaScript using constructors, encapsulation, inheritance and polymorphism. 
 <br/>
 
 [![Run on Repl.it](https://repl.it/badge/github/bdtripp/chord_and_scale_finder)](https://repl.it/github/bdtripp/chord_and_scale_finder)

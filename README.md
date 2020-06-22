@@ -35,8 +35,8 @@ Example:
 - D  Minor Chords:  D, F, A
 - etc./
 
-**Scales** will be listed next with the same format as the Chords.  
-<br/>  
+**Scales** will be listed next with the same format as the Chords./
+
 -	Each line will contain the seven musical notes that makeup the scale./
 
 Example:  

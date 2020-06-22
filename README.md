@@ -37,8 +37,8 @@ Example:
 
 **Scales** will be listed next with the same format as the Chords.  
 <br/>  
--	Each line will contain the seven musical notes that makeup the scale.  
-<br/>  
+-	Each line will contain the seven musical notes that makeup the scale./
+
 Example:  
 - C  Major Scale:  C, D, E, F, G, A, B  
 - C  Minor Scale:  C, D, D#/Eb, F, G, G#/Ab, A#/Bb  
@@ -46,5 +46,4 @@ Example:
 - C# Minor Scale:  C#/Db, D#/Eb, E, F#/Gb, G#/Ab, A, B  
 - D  Major Scale:  D, E, F#/Gb, G, A, B, C#/Db  
 - D  Minor Scale:  D, E, F, G, A, A#/Bb, C  
-etc.  
-<br/>
+- etc.  

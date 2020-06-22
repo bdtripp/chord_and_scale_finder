@@ -15,8 +15,8 @@ Developed using Object Oriented JavaScript using constructors, encapsulation, in
 
 [![Run on Repl.it](https://repl.it/badge/github/bdtripp/chord_and_scale_finder)](https://repl.it/github/bdtripp/chord_and_scale_finder)
 <br/>
-
 ### Output:  
+
 <br/>
 **Chords** are listed first.  
 <br/>  

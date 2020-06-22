@@ -9,7 +9,7 @@ The musical chord and scale finder is capable of finding the musical notes that 
 <br/> 
 
 The first inversion and second inversion can also be listed for each of the above chords.  
-<br/>  
+
 Developed using Object Oriented JavaScript using constructors, encapsulation, inheritance and polymorphism.  
 <br/>
 
@@ -25,7 +25,7 @@ Developed using Object Oriented JavaScript using constructors, encapsulation, in
 -	For the purpose of this run, C will be the only note that displays all the chords, and the inversion types for the major cord.  All other notes will only display major and minor chords  
 
 The major and minor chords will be listed for each musical note (C, C#/Db, D, D#/Eb, E, F, F#/Gb, G, G#/Ab, A, A#/Ab, B).  
-<br/>  
+
 Example:  
 - C  Major Chords:  C, E, G  
 - C  Minor Chords:  C, D#/Eb, G  
@@ -37,7 +37,7 @@ Example:
 
 **Scales** will be listed next with the same format as the Chords.  
 
--	Each line will contain the seven musical notes that makeup the scale.  
+Each line will contain the seven musical notes that makeup the scale.  
 
 Example:  
 - C  Major Scale:  C, D, E, F, G, A, B  

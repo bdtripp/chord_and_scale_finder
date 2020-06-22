@@ -13,11 +13,11 @@ The first inversion and second inversion can also be listed for each of the abov
 Developed using Object Oriented JavaScript using constructors, encapsulation, inheritance and polymorphism.  
 <br/>
 
-[![Run on Repl.it](https://repl.it/badge/github/bdtripp/chord_and_scale_finder)](https://repl.it/github/bdtripp/chord_and_scale_finder)
+[![Run on Repl.it](https://repl.it/badge/github/bdtripp/chord_and_scale_finder)](https://repl.it/github/bdtripp/chord_and_scale_finder)  
 <br/>
 ### Output:  
 
-<br/>
+<br/>  
 **Chords** are listed first.  
 <br/>  
 -	There will be one line for each type of chord (major, minor, diminished, augmented and the associated inversions).  

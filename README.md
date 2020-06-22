@@ -33,11 +33,11 @@ Example:
 - C# Minor Chords:  C#/Db, E, G#/Ab  
 - D  Major Chords:  D, F#/Gb, A  
 - D  Minor Chords:  D, F, A
-- etc./
+- etc.\
 
-**Scales** will be listed next with the same format as the Chords./
+**Scales** will be listed next with the same format as the Chords.\
 
--	Each line will contain the seven musical notes that makeup the scale./
+-	Each line will contain the seven musical notes that makeup the scale.\
 
 Example:  
 - C  Major Scale:  C, D, E, F, G, A, B  

@@ -4,7 +4,7 @@ MusicalElement.create = function(properties) {
 
 MusicalElement.prototype.reduceOctave = function() {
     for (var i = 0; i < this.notes.length; i++) {
-        if(this.notes[i] >= 12) {
+        if(this.notes[i] >= NUM_PITCHES) {
             this.notes[i] = this.notes[i] - NUM_PITCHES;
         }
     }

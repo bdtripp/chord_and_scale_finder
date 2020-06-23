@@ -16,7 +16,7 @@ Developed using Object Oriented JavaScript using constructors, encapsulation, in
 	- The build methods of major, minor, augmented, and diminished chords all implement the build() method of their superclass (defined in Chord.js) in addition to their own unique code
 		- Go to Chord.js lines 14 - 29 
 	- Similarly, the build() methods of minor and major scales both implement the build method of their superclass (defined in Scale.js) in addition to their own unique code
-		- Go to Chord.js lines 14 - 29
+		- Go to Scale.js lines 3 - 18
 	- Go to MinorScale.js lines 3 - 13 and AugmentedChord.js lines 3 - 9 for examples of some of the subclass implemenations of build()
 <br/>
 

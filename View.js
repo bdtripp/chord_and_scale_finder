@@ -1,6 +1,6 @@
-View.prototype.createResults = function(result) {
-    for(var i = 0; i < result.length; i++) {
-        this.results.add(MusicalElement.create(result[i]));
+View.prototype.createResults = function(elmtProps) {
+    for(var i = 0; i < elmtProps.length; i++) {
+        this.results.add(MusicalElement.create(elmtProps[i]));
     }
 }
 

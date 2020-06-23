@@ -1,4 +1,4 @@
-var elements = [
+var elementProps = [
     {type: MusicalElement.MusicalElementType.MAJOR_CHORD, root: 0, inversion: "root"},
     {type: MusicalElement.MusicalElementType.MAJOR_CHORD, root: 0, inversion: "first"},
     {type: MusicalElement.MusicalElementType.MAJOR_CHORD, root: 0, inversion: "second"},

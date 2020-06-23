@@ -23,7 +23,7 @@ Chord.prototype.build = function(content) {
     this.notes.push(this.properties.root + 4);
     this.notes.push(this.properties.root + 7);
     
-    if(this.properties.quality !== "root") {
+    if(this.properties.inversion !== "root") {
         this.invert(this.notes);
     }
 }

@@ -7,7 +7,7 @@ MinorScale.prototype.build = function(content) {
     this.notes[5] = this.notes[5] - 1;
     this.notes[6] = this.notes[6] - 1;
     
-    this.reduceOctave(this.notes);
+    this.reduceOctave();
     this.createNoteNames();
     this.displayElement(content);
 }

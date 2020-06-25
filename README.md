@@ -20,8 +20,11 @@ Developed using Object Oriented JavaScript using constructors, encapsulation, in
 	- Go to MinorScale.js lines 3 - 13 and AugmentedChord.js lines 3 - 9 for examples of some of the subclass implemenations of build()
 <br/>
 
-[![Run on Repl.it](https://repl.it/badge/github/bdtripp/chord_and_scale_finder)](https://repl.it/github/bdtripp/chord_and_scale_finder)  
-<br/>
+## Run Chord and Scale Finder  
+
+1. Copy all of the files from this repository to your computer. Make sure that all of the files are in the same folder. 
+2. Double-click on index.html
+3. The webpage should now be open in your browser
 
 ### Output:
 

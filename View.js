@@ -1,14 +1,16 @@
-View.prototype.createResults = function(elmtProps) {
-    for(var i = 0; i < elmtProps.length; i++) {
-        this.results.add(MusicalElement.create(elmtProps[i]));
-    }
+View.prototype.createResults = function(selection) {
+    this.results.add(MusicalElement.create(selection));
 }
 
-View.prototype.show = function() {
-    var content = document.getElementById("content");
+View.prototype.showInitial = function() {
     var form = document.getElementById("form");
     
     this.form.createFields(form);
+}
+
+View.prototype.showResults = function() {
+    var content = document.getElementById("content");
+
     this.results.build(content);
 }
 

@@ -5,6 +5,7 @@ DiminishedChord.prototype.build = function(content) {
     this.notes[1] = this.notes[1] - 1;
     this.notes[2] = this.notes[2] - 1;
        
+    this.reduceOctave();
     this.createNoteNames();
     this.displayElement(content);
 }

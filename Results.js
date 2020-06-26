@@ -1,13 +1,11 @@
 Results.prototype.build = function(content) {
-    for(var i = 0; i < this.musicalElements.length; i++) {
-        this.musicalElements[i].build(content);
-    }
+    this.musicalElement.build(content);
 }
 
 Results.prototype.add = function(musicalElement) {
-    this.musicalElements.push(musicalElement)
+    this.musicalElement = musicalElement
 }
 
 function Results() {
-    this.musicalElements = [];
+
 }

@@ -5,6 +5,7 @@
         <title>Chord and Scale Finder</title>
         <script src="View.js"></script>
         <script src="DropDownMaker.js"></script>
+        <script src="Selection.js"></script>
         <script src="Form.js"></script>
         <script src="Results.js"></script>
         <script src="MusicalElement.js"></script>
@@ -21,8 +22,6 @@
         <script src="elementProps.js"></script>
         <script>
             var view = new View();
-            
-            view.createResults(elementProps);
         </script>
         <style>
             h1 {
@@ -33,7 +32,8 @@
             
             p {
                 border-bottom: 1px solid black;
-                padding: 5px;
+                padding: 10px;
+                margin: 0;
             }
             
             #content {
@@ -43,7 +43,7 @@
             }
         </style>
     </head>
-    <body onload="view.show();">
+    <body onload="view.showInitial();">
         <div id="content">
             <h1>Chord and Scale Finder</h1>
             <div id="form"></div>

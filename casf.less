@@ -1,17 +1,128 @@
-            h1 {
-                text-align: center;
-                border-bottom: 1px solid;
-                padding-bottom: 10px;
+//h1 {
+//    text-align: center;
+//    border-bottom: 1px solid;
+//    padding-bottom: 10px;
+//}
+//
+//p {
+//    border-bottom: 1px solid black;
+//    padding: 10px;
+//    margin: 0;
+//}
+//
+//#content {
+//    border: 1px solid black;
+//    width: 40%;
+//    margin: 0 auto;
+//}
+
+/**************************
+          VARIABLES
+***************************/
+@color1: #fded99;
+@color2: #837217;
+@color3: #5b4d02;
+@color4: #fffbe2;
+/**************************
+          MIXINS
+***************************/
+
+
+/**************************
+       MOBILE STYLE
+***************************/
+body {
+    font-family: helvetica, sans-serif;
+        
+    div#content {
+        border: 1px solid @color1;
+        margin: 0 auto;
+        border-radius: 5px;
+        background-color: @color4;
+
+        h1 {
+            text-align: center;
+            border-bottom: 1px solid @color1;
+            padding: 10px; 
+            color: @color2;
+            background-color: @color1;
+            margin: 0;
+        }
+
+        div#form {
+            padding-bottom: 20px;
+            border-bottom: 1px solid @color1;
+
+            div {
+                margin: 15px auto;
+                width: 50%;
+                font-size: 1.2rem;
+
+                label {
+
+                }
+
+                select {
+                    font-size: 1rem;
+                    padding: 3px;
+                    
+                    option {
+
+                    }
+                }
             }
+
+            input {
+                margin: 25px auto 0 auto;
+                display: block;
+                padding: 10px 20px;
+                font-size: 1rem;
+                letter-spacing: 2px;
+                border-color: #7b7f15;
+            }
+        }
+
+        p {
+            border-bottom: 1px solid @color2;
+            padding: 10px;
+            margin: 0;
+            font-size: 1.5rem;
+            text-align: center;
+            background-color: @color1;
+            color: @color3;
             
-            p {
-                border-bottom: 1px solid black;
-                padding: 10px;
-                margin: 0;
+            &:last-of-type {
+                border-radius: 0 0 5px 5px;
             }
-            
-            #content {
-                border: 1px solid black;
-                width: 40%;
-                margin: 0 auto;
+
+            span {
+                color: @color2;
+                display: block;
+                padding-top: 10px;
+                font-size: 1.9rem;
+                font-weight: bold;
             }
+        }
+        
+        
+    }
+}
+
+/**************************
+       TABLET STYLE
+***************************/
+@media (min-width: 600px) {
+    
+}
+
+
+/**************************
+       700PX AND UP STYLE
+***************************/
+
+
+
+/**************************
+       DESKTOP STYLE
+***************************/
+

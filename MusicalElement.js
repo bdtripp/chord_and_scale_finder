@@ -12,16 +12,22 @@ MusicalElement.prototype.reduceOctave = function() {
 }
 
 MusicalElement.prototype.displayElement = function(content) {
+    this.noteString = "";
+    
     for(var i = 0; i < this.noteNames.length; i++) {
         if (i === this.noteNames.length - 1) {
-            this.displayString += this.noteNames[i];
+            this.noteString += this.noteNames[i];
         } else {
-            this.displayString += this.noteNames[i] + ", ";
+            this.noteString += this.noteNames[i] + ", ";
         }
     }
     
-    displayItem = document.createElement("p");
-    displayItem.innerHTML = this.displayString;
+    var displayItem = document.createElement("p");
+    displayItem.innerHTML = this.labelString;
+    noteSpan = document.createElement("span");
+    noteSpan.innerHTML = this.noteString;
+    noteSpan.setAttribute("class", "noteDisplay")
+    displayItem.appendChild(noteSpan);
     content.appendChild(displayItem);
 }
 

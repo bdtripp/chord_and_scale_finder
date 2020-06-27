@@ -1,14 +1,16 @@
-Form.prototype.replaceDD = function(dropDownName, oldDropDown, options, currentSelection) {
+Form.prototype.replaceDD = function(dropDownName, oldDropDown, options, currentSelection, insertBeforeElmnt) {
     var oldDDParent = oldDropDown.parentElement;
-    oldDDParent.innerHTML = "";
     
-    var newDD = this.dropDownMaker.createDropDown(dropDownName, options, oldDDParent);
+    oldDDParent.parentElement.removeChild(oldDDParent);
     
-    for(var i =0; i < newDD.options.length; i++) {
+    var newDD = this.dropDownMaker.createDropDown(dropDownName, options, this.formElement, insertBeforeElmnt);
+    
+    for(var i = 0; i < newDD.options.length; i++) {
         if(newDD.options[i].text === currentSelection) {
             newDD.options[i].selected = true;
         }
     }
+    
     return newDD;
 }
 
@@ -20,7 +22,8 @@ Form.prototype.checkType = function() {
             "Quality", 
             this.qualityDD, 
             SCALE_QUALITIES, 
-            this.qualitySelected
+            this.qualitySelected,
+            this.typeDD.parentElement
         );
         
         this.inversionDD.parentElement.style.display = "none";
@@ -31,7 +34,8 @@ Form.prototype.checkType = function() {
             "Quality", 
             this.qualityDD, 
             CHORD_QUALITIES, 
-            this.qualitySelected
+            this.qualitySelected,
+            this.typeDD.parentElement
         );
         
         this.inversionDD.parentElement.style.display = "block";
@@ -46,6 +50,8 @@ Form.prototype.setSelectedProp = function(dropDown, propToSet) {
 }
 
 Form.prototype.createFields = function(form) {
+    this.formElement = form;
+    
     this.rootDD = this.dropDownMaker.createDropDown("Root", PITCHES, form);
     this.qualityDD = this.dropDownMaker.createDropDown("Quality", CHORD_QUALITIES, form);
     this.typeDD = this.dropDownMaker.createDropDown("Type", MUSICAL_ELMNT_TYPES, form);

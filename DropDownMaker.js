@@ -1,4 +1,4 @@
-DropDownMaker.prototype.createDropDown = function(name, options, parent) {
+DropDownMaker.prototype.createDropDown = function(name, options, parent, insertBeforeElmnt) {
     var dropDownContainer = document.createElement("div")
     var dropDown = document.createElement("select");
     var label = document.createElement("label");
@@ -16,7 +16,11 @@ DropDownMaker.prototype.createDropDown = function(name, options, parent) {
     dropDownContainer.appendChild(label);
     dropDownContainer.appendChild(dropDown);
     
-    parent.appendChild(dropDownContainer);
+    if(insertBeforeElmnt) {
+        parent.insertBefore(dropDownContainer, insertBeforeElmnt)
+    } else {
+        parent.appendChild(dropDownContainer);
+    }
     
     return dropDown;
 }

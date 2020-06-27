@@ -3,7 +3,7 @@ Scale.prototype = new MusicalElement();
 Scale.prototype.build = function(content) {
     this.notes = [];
     var nameLength = this.properties.type.name.length;
-    this.displayString = PITCHES[this.properties.root] + " " + 
+    this.labelString = PITCHES[this.properties.root] + " " + 
         this.properties.type.name.substring(0, nameLength - 5).toLowerCase() + " " +
         this.properties.type.name.substring(nameLength - 5, nameLength).toLowerCase() + 
         ": ";

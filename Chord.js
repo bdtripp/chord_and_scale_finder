@@ -25,7 +25,7 @@ Chord.prototype.stackNotes = function() {
 
 Chord.prototype.build = function(content) {  
     var nameLength = this.properties.type.name.length;
-    this.displayString = PITCHES[this.properties.root] +
+    this.labelString = PITCHES[this.properties.root] +
         " " + this.properties.type.name.substring(0, nameLength - 5).toLowerCase() + " " +
         this.properties.type.name.substring(nameLength - 5, nameLength).toLowerCase() +
         " (inversion: " + this.properties.inversion + "): ";

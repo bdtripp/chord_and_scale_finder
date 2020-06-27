@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Chord and Scale Finder</title>
+        <link rel="stylesheet" href="casf.css" type="text/css">
         <script src="View.js"></script>
         <script src="DropDownMaker.js"></script>
         <script src="Selection.js"></script>
@@ -17,31 +18,14 @@
         <script src="Scale.js"></script>
         <script src="MajorScale.js"></script>
         <script src="MinorScale.js"></script>
+        <script src="AugmentedScale.js"></script>
+        <script src="DiminishedScale.js"></script>
         <script src="musicalConstants.js"></script>
         <script src="MusicalElement.MusicalElementType.js"></script>
         <script src="elementProps.js"></script>
         <script>
             var view = new View();
         </script>
-        <style>
-            h1 {
-                text-align: center;
-                border-bottom: 1px solid;
-                padding-bottom: 10px;
-            }
-            
-            p {
-                border-bottom: 1px solid black;
-                padding: 10px;
-                margin: 0;
-            }
-            
-            #content {
-                border: 1px solid black;
-                width: 40%;
-                margin: 0 auto;
-            }
-        </style>
     </head>
     <body onload="view.showInitial();">
         <div id="content">

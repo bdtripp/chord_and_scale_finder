@@ -1,10 +1,10 @@
-DropDownMaker.prototype.createDropDown = function(name, options, form) {
+DropDownMaker.prototype.createDropDown = function(name, options, parent) {
     var dropDownContainer = document.createElement("div")
     var dropDown = document.createElement("select");
     var label = document.createElement("label");
     
     label.innerHTML = name + ": ";
-    dropDown.setAttribute("id", name);
+    dropDown.setAttribute("id", name.toLocaleLowerCase());
     
     for(var i = 0; i < options.length; i++) {
         var option = document.createElement("option");
@@ -16,7 +16,9 @@ DropDownMaker.prototype.createDropDown = function(name, options, form) {
     dropDownContainer.appendChild(label);
     dropDownContainer.appendChild(dropDown);
     
-    form.appendChild(dropDownContainer);
+    parent.appendChild(dropDownContainer);
+    
+    return dropDown;
 }
 
 function DropDownMaker() {

@@ -11,21 +11,28 @@ Chord.prototype.invert = function(notes) {
     }
 }
 
-Chord.prototype.build = function(content) {
+Chord.prototype.stackNotes = function() {
     this.notes = [];
+    
+    this.notes.push(this.root);
+    this.notes.push(this.third);
+    this.notes.push(this.fifth);
+    
+    if(this.properties.inversion !== "root") {
+        this.invert(this.notes);
+    }
+}
+
+Chord.prototype.build = function(content) {  
     var nameLength = this.properties.type.name.length;
     this.displayString = PITCHES[this.properties.root] +
         " " + this.properties.type.name.substring(0, nameLength - 5).toLowerCase() + " " +
         this.properties.type.name.substring(nameLength - 5, nameLength).toLowerCase() +
         " (inversion: " + this.properties.inversion + "): ";
     
-    this.notes.push(this.properties.root);
-    this.notes.push(this.properties.root + 4);
-    this.notes.push(this.properties.root + 7);
-    
-    if(this.properties.inversion !== "root") {
-        this.invert(this.notes);
-    }
+    this.root = this.properties.root;
+    this.third = this.properties.root + 4;
+    this.fifth = this.properties.root + 7;
 }
 
 function Chord(properties) {

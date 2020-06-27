@@ -3,9 +3,9 @@ View.prototype.createResults = function(selection) {
 }
 
 View.prototype.showInitial = function() {
-    var form = document.getElementById("form");
+    var formElement = document.getElementById("form");
     
-    this.form.createFields(form);
+    this.form.createFields.bind(this.form, formElement)();
 }
 
 View.prototype.showResults = function() {

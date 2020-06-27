@@ -8,37 +8,48 @@
 /**************************
        MOBILE STYLE
 ***************************/
-body {
+html {
+  background: url(piano_background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+html body {
   font-family: helvetica, sans-serif;
 }
-body div#content {
-  border: 1px solid #fded99;
+html body div#content {
+  border: 3px outset #fded99;
   margin: 0 auto;
   border-radius: 5px;
   background-color: #fffbe2;
+  max-width: 500px;
 }
-body div#content h1 {
+html body div#content h1 {
   text-align: center;
   border-bottom: 1px solid #fded99;
   padding: 10px;
   color: #837217;
   background-color: #fded99;
   margin: 0;
+  border-radius: 5px 5px 0 0;
 }
-body div#content div#form {
-  padding-bottom: 20px;
+html body div#content div#form {
+  padding: 20px 0;
   border-bottom: 1px solid #fded99;
 }
-body div#content div#form div {
-  margin: 15px auto;
-  width: 50%;
+html body div#content div#form div {
+  padding: 10px 0;
+  margin: 0 auto;
+  width: 200px;
   font-size: 1.2rem;
 }
-body div#content div#form div select {
+html body div#content div#form div select {
   font-size: 1rem;
   padding: 3px;
 }
-body div#content div#form input {
+html body div#content div#form input {
   margin: 25px auto 0 auto;
   display: block;
   padding: 10px 20px;
@@ -46,8 +57,7 @@ body div#content div#form input {
   letter-spacing: 2px;
   border-color: #7b7f15;
 }
-body div#content p {
-  border-bottom: 1px solid #837217;
+html body div#content p {
   padding: 10px;
   margin: 0;
   font-size: 1.5rem;
@@ -55,10 +65,13 @@ body div#content p {
   background-color: #fded99;
   color: #5b4d02;
 }
-body div#content p:last-of-type {
+html body div#content p:last-of-type {
   border-radius: 0 0 5px 5px;
 }
-body div#content p span {
+html body div#content p:not(:last-of-type) {
+  border-bottom: 3px ridge #837217;
+}
+html body div#content p span {
   color: #837217;
   display: block;
   padding-top: 10px;

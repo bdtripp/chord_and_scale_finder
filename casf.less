@@ -31,82 +31,98 @@
 /**************************
        MOBILE STYLE
 ***************************/
-body {
-    font-family: helvetica, sans-serif;
-        
-    div#content {
-        border: 1px solid @color1;
-        margin: 0 auto;
-        border-radius: 5px;
-        background-color: @color4;
+html {
+    background: url(piano_background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    
+    body {
+        font-family: helvetica, sans-serif;
 
-        h1 {
-            text-align: center;
-            border-bottom: 1px solid @color1;
-            padding: 10px; 
-            color: @color2;
-            background-color: @color1;
-            margin: 0;
-        }
+        div#content {
+            border: 3px outset @color1;
+            margin: 0 auto;
+            border-radius: 5px;
+            background-color: @color4;
+            max-width: 500px;
 
-        div#form {
-            padding-bottom: 20px;
-            border-bottom: 1px solid @color1;
+            h1 {
+                text-align: center;
+                border-bottom: 1px solid @color1;
+                padding: 10px; 
+                color: @color2;
+                background-color: @color1;
+                margin: 0;
+                border-radius: 5px 5px 0 0;
+            }
 
-            div {
-                margin: 15px auto;
-                width: 50%;
-                font-size: 1.2rem;
+            div#form {
+                padding: 20px 0;
+                border-bottom: 1px solid @color1;
 
-                label {
+                div {
+                    padding: 10px 0;
+                    margin: 0 auto;
+                    width: 200px;
+                    font-size: 1.2rem;
 
-                }
-
-                select {
-                    font-size: 1rem;
-                    padding: 3px;
-                    
-                    option {
+                    label {
 
                     }
+
+                    select {
+                        font-size: 1rem;
+                        padding: 3px;
+
+                        option {
+
+                        }
+                    }
+                }
+
+                input {
+                    margin: 25px auto 0 auto;
+                    display: block;
+                    padding: 10px 20px;
+                    font-size: 1rem;
+                    letter-spacing: 2px;
+                    border-color: #7b7f15;
                 }
             }
 
-            input {
-                margin: 25px auto 0 auto;
-                display: block;
-                padding: 10px 20px;
-                font-size: 1rem;
-                letter-spacing: 2px;
-                border-color: #7b7f15;
-            }
-        }
+            p {
+                padding: 10px;
+                margin: 0;
+                font-size: 1.5rem;
+                text-align: center;
+                background-color: @color1;
+                color: @color3;
 
-        p {
-            border-bottom: 1px solid @color2;
-            padding: 10px;
-            margin: 0;
-            font-size: 1.5rem;
-            text-align: center;
-            background-color: @color1;
-            color: @color3;
-            
-            &:last-of-type {
-                border-radius: 0 0 5px 5px;
+                &:last-of-type {
+                    border-radius: 0 0 5px 5px;
+                }
+                
+                &:not(:last-of-type) {
+                    border-bottom: 3px ridge @color2;
+                }
+
+                span {
+                    color: @color2;
+                    display: block;
+                    padding-top: 10px;
+                    font-size: 1.9rem;
+                    font-weight: bold;
+                }
             }
 
-            span {
-                color: @color2;
-                display: block;
-                padding-top: 10px;
-                font-size: 1.9rem;
-                font-weight: bold;
-            }
+
         }
-        
-        
     }
 }
+
 
 /**************************
        TABLET STYLE

@@ -18,61 +18,67 @@ html {
 }
 html body {
   font-family: helvetica, sans-serif;
+  position: relative;
 }
-html body div#content {
-  border: 3px outset #fded99;
+html body div#main {
+  border: 3px outset #190027;
   margin: 0 auto;
   border-radius: 5px;
   background-color: #fffbe2;
   max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-html body div#content h1 {
+html body div#main h1 {
   text-align: center;
-  border-bottom: 1px solid #fded99;
+  border-bottom: 1px solid #190027;
   padding: 10px;
-  color: #837217;
-  background-color: #fded99;
+  color: #f5f5f5;
+  background-color: #190027;
   margin: 0;
-  border-radius: 5px 5px 0 0;
 }
-html body div#content div#form {
+html body div#main div#form {
   padding: 20px 0;
-  border-bottom: 1px solid #fded99;
+  border-bottom: 1px solid #190027;
 }
-html body div#content div#form div {
+html body div#main div#form div {
   padding: 10px 0;
   margin: 0 auto;
   width: 200px;
   font-size: 1.2rem;
 }
-html body div#content div#form div select {
+html body div#main div#form div label {
+  color: #263700;
+}
+html body div#main div#form div select {
   font-size: 1rem;
   padding: 3px;
+  color: #263700;
 }
-html body div#content div#form input {
+html body div#main div#form input {
   margin: 25px auto 0 auto;
   display: block;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 2px;
-  border-color: #7b7f15;
+  border-color: #80a035;
+  color: #263700;
 }
-html body div#content p {
+html body div#main p {
   padding: 10px;
   margin: 0;
   font-size: 1.5rem;
   text-align: center;
-  background-color: #fded99;
-  color: #5b4d02;
+  background-color: #190027;
+  color: #c5c5c5;
 }
-html body div#content p:last-of-type {
-  border-radius: 0 0 5px 5px;
+html body div#main p:not(:last-of-type) {
+  border-bottom: 3px ridge #f5f5f5;
 }
-html body div#content p:not(:last-of-type) {
-  border-bottom: 3px ridge #837217;
-}
-html body div#content p span {
-  color: #837217;
+html body div#main p span {
+  color: #f5f5f5;
   display: block;
   padding-top: 10px;
   font-size: 1.9rem;

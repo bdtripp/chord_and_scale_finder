@@ -28,7 +28,7 @@ Chord.prototype.build = function(content) {
     this.labelString = PITCHES[this.properties.root] +
         " " + this.properties.type.name.substring(0, nameLength - 5).toLowerCase() + " " +
         this.properties.type.name.substring(nameLength - 5, nameLength).toLowerCase() +
-        " (inversion: " + this.properties.inversion + "): ";
+        " (inversion: " + this.properties.inversion + ")";
     
     this.root = this.properties.root;
     this.third = this.properties.root + 4;

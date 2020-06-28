@@ -12,6 +12,12 @@ MusicalElement.prototype.reduceOctave = function() {
 }
 
 MusicalElement.prototype.displayElement = function(content) {
+    var oldDisplayItem = document.getElementById("displayItem");
+    
+    if(oldDisplayItem) {
+        oldDisplayItem.parentElement.innerHTML = "";
+    }
+    
     this.noteString = "";
     
     for(var i = 0; i < this.noteNames.length; i++) {
@@ -23,6 +29,7 @@ MusicalElement.prototype.displayElement = function(content) {
     }
     
     var displayItem = document.createElement("p");
+    displayItem.setAttribute("id", "displayItem");
     displayItem.innerHTML = this.labelString;
     noteSpan = document.createElement("span");
     noteSpan.innerHTML = this.noteString;

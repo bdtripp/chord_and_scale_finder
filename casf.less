@@ -19,10 +19,12 @@
 /**************************
           VARIABLES
 ***************************/
-@color1: #fded99;
-@color2: #837217;
-@color3: #5b4d02;
+@color1: #190027;
+@color2: #f5f5f5;
+@color3: #c5c5c5;
 @color4: #fffbe2;
+@color5: #80a035;
+@color6: #263700;
 /**************************
           MIXINS
 ***************************/
@@ -41,13 +43,18 @@ html {
     
     body {
         font-family: helvetica, sans-serif;
+        position: relative;
 
-        div#content {
+        div#main {
             border: 3px outset @color1;
             margin: 0 auto;
             border-radius: 5px;
             background-color: @color4;
             max-width: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
 
             h1 {
                 text-align: center;
@@ -56,7 +63,6 @@ html {
                 color: @color2;
                 background-color: @color1;
                 margin: 0;
-                border-radius: 5px 5px 0 0;
             }
 
             div#form {
@@ -70,13 +76,14 @@ html {
                     font-size: 1.2rem;
 
                     label {
-
+                        color: @color6;
                     }
 
                     select {
                         font-size: 1rem;
                         padding: 3px;
-
+                        color: @color6;
+                        
                         option {
 
                         }
@@ -87,9 +94,10 @@ html {
                     margin: 25px auto 0 auto;
                     display: block;
                     padding: 10px 20px;
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     letter-spacing: 2px;
-                    border-color: #7b7f15;
+                    border-color: @color5;
+                    color: @color6;
                 }
             }
 
@@ -100,10 +108,6 @@ html {
                 text-align: center;
                 background-color: @color1;
                 color: @color3;
-
-                &:last-of-type {
-                    border-radius: 0 0 5px 5px;
-                }
                 
                 &:not(:last-of-type) {
                     border-bottom: 3px ridge @color2;

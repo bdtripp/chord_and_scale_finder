@@ -4,8 +4,10 @@ View.prototype.createResults = function(selection) {
 
 View.prototype.showInitial = function() {
     var formElement = document.getElementById("form");
+    this.setBodyHeight();
     
     this.form.createFields.bind(this.form, formElement)();
+    window.addEventListener("resize", this.setBodyHeight)
 }
 
 View.prototype.showResults = function() {
@@ -13,6 +15,14 @@ View.prototype.showResults = function() {
 
     this.results.build(content);
 }
+
+View.prototype.setBodyHeight = function() {
+    document.getElementsByTagName("body")[0].style.height = window.innerHeight + "px";
+}
+
+//View.prototype.recenter = function() {
+//    document.getElementsByTagName("body").style.height = window.innerHeight;
+//}
 
 function View() {
     this.form = new Form();

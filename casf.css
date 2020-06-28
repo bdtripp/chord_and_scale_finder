@@ -14,7 +14,6 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;
 }
 html body {
   font-family: helvetica, sans-serif;
@@ -26,10 +25,6 @@ html body div#main {
   border-radius: 5px;
   background-color: #fffbe2;
   max-width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 html body div#main h1 {
   text-align: center;
@@ -57,6 +52,9 @@ html body div#main div#form div select {
   padding: 3px;
   color: #263700;
 }
+html body div#main div#form div select:hover {
+  cursor: pointer;
+}
 html body div#main div#form input {
   margin: 25px auto 0 auto;
   display: block;
@@ -65,6 +63,10 @@ html body div#main div#form input {
   letter-spacing: 2px;
   border-color: #80a035;
   color: #263700;
+}
+html body div#main div#form input:hover {
+  background-color: #DDD;
+  cursor: pointer;
 }
 html body div#main p {
   padding: 10px;
@@ -85,8 +87,16 @@ html body div#main p span {
   font-weight: bold;
 }
 /**************************
-       TABLET STYLE
+       500PX AND UP
 ***************************/
+@media (min-width: 500px) {
+  html body div#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 /**************************
        700PX AND UP STYLE
 ***************************/

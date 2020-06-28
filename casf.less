@@ -39,7 +39,6 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow: hidden;
     
     body {
         font-family: helvetica, sans-serif;
@@ -51,10 +50,6 @@ html {
             border-radius: 5px;
             background-color: @color4;
             max-width: 500px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
 
             h1 {
                 text-align: center;
@@ -84,8 +79,12 @@ html {
                         padding: 3px;
                         color: @color6;
                         
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        
                         option {
-
+                            
                         }
                     }
                 }
@@ -98,6 +97,11 @@ html {
                     letter-spacing: 2px;
                     border-color: @color5;
                     color: @color6;
+                    
+                    &:hover {
+                        background-color: #DDD;
+                        cursor: pointer;
+                    }
                 }
             }
 
@@ -129,10 +133,58 @@ html {
 
 
 /**************************
-       TABLET STYLE
+       500PX AND UP
 ***************************/
-@media (min-width: 600px) {
+@media (min-width: 500px) {
     
+    html {
+
+        body {
+
+            div#main {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                h1 {
+
+                }
+
+                div#form {
+
+                    div {
+
+                        label {
+
+                        }
+
+                        select {
+
+                            option {
+
+                            }
+                        }
+                    }
+
+                    input {
+
+                    }
+                }
+
+                p {
+
+                    &:not(:last-of-type) {
+
+                    }
+
+                    span {
+
+                    }
+                }
+            }
+        }
+    }
 }
 
 

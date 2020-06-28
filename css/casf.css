@@ -9,7 +9,7 @@
        MOBILE STYLE
 ***************************/
 html {
-  background: url(piano_background.png) no-repeat center center fixed;
+  background: url(../images/piano_background.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

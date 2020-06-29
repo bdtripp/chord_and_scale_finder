@@ -2,9 +2,11 @@ DiminishedChord.prototype = new Chord();
 
 DiminishedChord.prototype.build = function(content) {
     Chord.prototype.build.call(this, content);
-    this.notes[1] = this.notes[1] - 1;
-    this.notes[2] = this.notes[2] - 1;
+    this.third = this.third - 1;
+    this.fifth = this.fifth - 1;
+    Chord.prototype.stackNotes.call(this);
        
+    this.reduceOctave();
     this.createNoteNames();
     this.displayElement(content);
 }

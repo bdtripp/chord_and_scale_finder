@@ -8,6 +8,10 @@ MinorChord.prototype.build = function(content) {
     this.reduceOctave();
     this.createNoteNames();
     this.displayElement(content);
+    
+    //test
+    var mc = new MajorChord();
+    mc.properties = "test";
 }
 
 function MinorChord(properties) {

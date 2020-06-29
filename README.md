@@ -9,7 +9,7 @@ The musical chord and scale finder is capable of finding the musical notes that 
 
 The first inversion and second inversion can also be listed for each of the above chords.  
 
-Developed using Object Oriented JavaScript using constructors, encapsulation, inheritance and polymorphism.
+Developed using object-oriented JavaScript using constructors, inheritance and polymorphism.
 
 - Examples of polymorphism:
 

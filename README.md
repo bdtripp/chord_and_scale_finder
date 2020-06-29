@@ -23,14 +23,14 @@ Developed using Object Oriented JavaScript using constructors, encapsulation, in
 3.	The webpage should now be open in your browser  
 
 ### Input:
-**Make selections from the following drop-downs:**
+Make selections from the following drop-downs:
 - **Root:**		Select the musical note that will be used as the root of the chord or scale (i.e. select “C” as the root if you want to find “C major chord”
 - **Quality:**	Select Major, Minor, Augmented or Diminished if you are finding a chord.
 		Select Major or Minor if you are finding a scale.
 - **Type:**		Select Chord or Scale.
 - **Inversion:**	Select Root, First, or Second.  This drop-down is only applicable to chords.  
 <!-- This comment ends the list -->
-**Click the “Submit” button**
+Click the “Submit” button
 
 ### Output:
 

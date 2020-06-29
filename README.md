@@ -19,9 +19,7 @@ Developed using object-oriented JavaScript using constructors, inheritance and p
 	- Go to MinorScale.js lines 3 - 13 and AugmentedChord.js lines 3 - 11 for examples of some of the subclass implemenations of build().
 
 ## Run Chord and Scale Finder
-1.	Clone the files from this repository to your computer. Make sure that all of the files are in the same folder.
-2.	Double-click on index.html
-3.	The webpage should now be open in your browser  
+Go to http://bdtripp.com/chord_and_scale_finder/
 
 ### Input:
 Make selections from the following drop-downs:

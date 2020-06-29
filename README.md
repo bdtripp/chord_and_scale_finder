@@ -28,8 +28,8 @@ Developed using Object Oriented JavaScript using constructors, encapsulation, in
 - **Quality:**	Select Major, Minor, Augmented or Diminished if you are finding a chord.
 		Select Major or Minor if you are finding a scale.
 - **Type:**		Select Chord or Scale.
-- **Inversion:**	Select Root, First, or Second.  This drop-down is only applicable to chords.  
-<br>
+- **Inversion:**	Select Root, First, or Second.  This drop-down is only applicable to chords. 
+<a/>
 **Click the “Submit” button**
 
 ### Output:

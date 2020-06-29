@@ -29,6 +29,7 @@ Developed using Object Oriented JavaScript using constructors, encapsulation, in
 		Select Major or Minor if you are finding a scale.
 - **Type:**		Select Chord or Scale.
 - **Inversion:**	Select Root, First, or Second.  This drop-down is only applicable to chords.  
+<br>
 **Click the “Submit” button**
 
 ### Output:

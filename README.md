@@ -30,6 +30,7 @@ Developed using Object Oriented JavaScript using constructors, encapsulation, in
 - **Type:**		Select Chord or Scale.
 - **Inversion:**	Select Root, First, or Second.  This drop-down is only applicable to chords.  
 [//]: # (Hello)
+<!-- Test -->
 **Click the “Submit” button**
 
 ### Output:

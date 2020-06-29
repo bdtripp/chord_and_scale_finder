@@ -32,7 +32,6 @@ Make selections from the following drop-downs:
 - **Inversion:**	Select Root, First, or Second.  This drop-down is only applicable to chords.  
 <!-- This comment ends the list -->
 Click the “Submit” button
->>>>>>> form
 
 ### Output:
 
